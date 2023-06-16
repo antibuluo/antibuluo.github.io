@@ -329,7 +329,11 @@
 #recent-posts>.recent-post-item,.layout>div:first-child:not(.recent-posts),.layout_post>#page,.layout_post>#post,.read-mode .layout_post>#post{
     background:var(--light_page_color)
 }
-[data-theme=dark] #recent-posts>.recent-post-item,[data-theme=dark] .layout>div:first-child:not(.recent-posts),[data-theme=dark] .layout_post>#page,[data-theme=dark] .layout_post>#post,[data-theme=dark] .read-mode .layout_post>#post{
+[data-theme=dark] #recent-posts>.recent-post-item,
+[data-theme=dark] .layout>div:first-child:not(.recent-posts),
+[data-theme=dark] .layout_post>#page,
+[data-theme=dark] .layout_post>#post,
+[data-theme=dark] .read-mode .layout_post>#post{
     background:var(--dark_page_color)
 }
 #page h1.page-title,#post>#post-info{
@@ -374,12 +378,7 @@
 #article-container .fancybox img{
     margin:0
 }
-body{
-    cursor:url(/css/img/default.cursor),default
-}
-a,button,img{
-    cursor:url(/css/img/pointer.cursor),default
-}
+
 video{
     width:100%
 }

@@ -1,0 +1,169 @@
+/* 自定义字体 字体放在source/fonts/目录下 */
+@font-face {
+    font-family: 'PingFang';
+    src: url('../../fonts/PingFang-Bold.ttf');
+}
+
+/* 页脚透明 */
+#footer {
+    background: hsla(0, 0%, 100%, 0)
+}
+
+/*页脚自定义字段字体颜色*/
+/* 也就是配置文件里的footer_custom_text */
+.footer_custom_text {
+    /*color: #00c4b6;*/
+}
+#footer #footer-wrap{
+    color:whitesmoke;
+}
+#footer #footer-wrap a{
+    color:yellowgreen;
+}
+
+/* 版权链接去掉下划线 */
+.layout_post .post-copyright .post-copyright-info a {
+    text-decoration: none;
+}
+
+/*移动端优化：去除归档、标签、最新文章、公告、、只保留网站统计*/
+@media screen and (max-width: 800px) {
+    #aside_content div:not(:last-child) {
+        display: none;
+        font-size: 13px;
+    }
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #e58a8a;
+    background-image: -webkit-linear-gradient(45deg,
+    rgba(255, 255, 255, 0.4) 25%,
+    transparent 25%, transparent 50%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.4) 75%,
+    transparent 75%, transparent);
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: #e58a8a;
+}
+
+/* 侧边栏天气时钟去掉背景色 */
+/*#aside-content.aside-content > .sticky_layout > .card-widget.card-clock > .card-glass > .card-background {*/
+/*    background-color: unset;*/
+/*    box-shadow: unset;*/
+/*}*/
+
+/* 透明度修改 */
+/* 首页文章卡片 */
+#recent-posts > .recent-post-item {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+/* 首页侧栏卡片 */
+#aside-content .card-widget {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* 文章页面正文背景 */
+div#post {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+/* 分页页面 */
+div#page {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+/* 归档页面 */
+div#archive {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+/* 标签页面 */
+div#tag {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+/* 分类页面 */
+div#category {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+/* 夜间模式,页面背景设为黑色 */
+[data-theme="dark"] #recent-posts > .recent-post-item,
+[data-theme="dark"] #aside-content .card-widget,
+[data-theme="dark"] div#post,
+[data-theme="dark"] div#page,
+[data-theme="dark"] div#archive,
+[data-theme="dark"] div#tag,
+[data-theme="dark"] div#category,
+[data-theme="dark"] div#post {
+    background: black;
+}
+
+
+
+/* 鼠标样式修改 */
+body {
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
+    default;
+}
+
+a,
+img {
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
+    default;
+}
+
+/* 搜索框圆角 */
+.search-dialog {
+    border-radius: 10px;
+}
+
+/* 音乐插件 */
+.aplayer .aplayer-lrc p{
+    font-size:12px;
+    font-weight:700;
+    line-height:16px!important
+}
+
+/* 歌词颜色 */
+.aplayer .aplayer-lrc p.aplayer-lrc-current{
+    color:#49b1f5;
+    font-size:15px
+}
+/* 隐藏 Aplayer 的全局吸底音乐标签，在css中添加 */
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+    left: -66px !important
+}
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+    left: 0 !important
+}
+
+/*--------------------------------------------------------------------------------------*/
+/* 背景顶图透明，公用一张图样式 */
+/* 顶图透明 */
+#page-header{
+    background: transparent!important;
+}
+/* top-img黑色透明玻璃效果移除 */
+#page-header.full_page::before {
+    background-color: transparent!important;
+}
+
+
+
